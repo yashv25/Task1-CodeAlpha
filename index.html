@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallary</h1>
+        <div class="gallary">
+            <img src="img1.webp" onclick="openbox(0)" class="img1">
+            <img src="img2.jpg" onclick="openbox(1)" class="img2">
+            <img src="img3.jpg" onclick="openbox(2)" class="img3">
+            <img src="img4.jpg" onclick="openbox(3)" class="img4">
+            <img src="img5.jpg" onclick="openbox(4)" class="img5">
+            <img src="img6.jpg" onclick="openbox(5)" class="img6">
+            <img src="img7.jpg" onclick="openbox(6)" class="img7">
+        </div>
+    </div>
+
+    <div id="box" class="box">
+        <i class="fa-solid fa-xmark" id="close" onclick="closebox()"></i>
+        <img id="box-img" src="">
+        <div class="nav-buttons">
+            <i class="fa-solid fa-angle-left" onclick="preImage()"></i>
+            <i class="fa-solid fa-angle-right" onclick="nextImage()"></i>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
